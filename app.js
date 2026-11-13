@@ -8,8 +8,8 @@ const translations = [
     foot: 'École normale supérieure · Département de philosophie',
     found: 'Ce document correspond à votre description.',
     clarify: 'Pouvez-vous préciser le sujet, le nom de l’auteur ou l’année ?',
-    none: 'Je n’ai pas trouvé de correspondance. Vous pouvez essayer avec un autre indice.',
-    open: 'Ouvrir le PDF', page: 'p.', examples: ['Un mémoire sur Hobbes', 'L’écologie chez Jacques Roumain', 'La lutte pour l’existence chez Darwin']
+    none: 'Je n’ai pas trouvé de correspondance. Vous pouvez essayer avec un autre indice.']
+    // open: 'Ouvrir le PDF', page: 'p.', examples: ['Un mémoire sur Hobbes', 'L’écologie chez Jacques Roumain', 'La lutte pour l’existence chez Darwin']
   },
   {
     code: 'ht', brand: 'Rechèch dokiman', languages: 'Lang', pilot: 'Pilòt · Dokiman UEH',
