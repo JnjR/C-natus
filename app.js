@@ -1,6 +1,6 @@
 const translations = [
   {
-    code: 'fr', brand: 'Recherche documentaire', languages: 'Langue', pilot: 'Pilote · Corpus de l’UEH',
+    code: 'fr', brand: 'Recherche documentaire', languages: 'Langue', pilot: 'Pilote',
     title: ['Quel document', 'cherchez-vous ?'], subtitle: 'Décrivez ce dont vous vous souvenez. Un sujet, un nom ou une année peut suffire.',
     chat: 'Conversation', collection: 'Mémoires de l’UEH', reset: 'Nouvelle recherche',
     greeting: 'Bonjour ! Décrivez le document que vous cherchez, même si vous avez oublié son titre.',
