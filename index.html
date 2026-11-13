@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pilote trilingue de recherche documentaire du CRIA.">
+  <title>CRIA · Recherche documentaire</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="catalogue.js" defer></script>
+  <script src="corpus-index.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><img class="cria-logo" src="cria-logo.png" alt="CRIA" width="72" height="50"><span></span><span id="brand-label">Recherche documentaire</span></div>
+    <div class="languages" id="languages" aria-label="Langue">
+      <button data-language="0" lang="fr" aria-pressed="true">Français</button>
+      <button data-language="1" lang="ht" aria-pressed="false">Kreyòl</button>
+      <button data-language="2" lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow"><span></span><span id="pilot">Pilote · Corpus de l’UEH</span></p>
+      <h1 id="title">Quel document<br> cherchez-vous ?</h1>
+      <p id="subtitle">Décrivez ce dont vous vous souvenez. Un sujet, un nom ou une année peut suffire.</p>
+    </section>
+    <div class="layout">
+      <section class="chat panel" aria-labelledby="chat-title">
+        <div class="panel-heading"><h2 id="chat-title">Conversation</h2><button type="button" id="reset" hidden></button></div>
+        <div class="messages" id="messages" role="log" aria-live="polite"></div>
+        <div class="examples" id="examples"></div>
+        <form id="query-form">
+          <label class="sr-only" id="query-label" for="query">Décrivez le document recherché</label>
+          <input id="query" type="text" required maxlength="500" autocomplete="off" placeholder="Décrivez le document recherché…">
+          <button type="submit" id="send">Rechercher <span aria-hidden="true">↗</span></button>
+        </form>
+      </section>
+      <aside class="panel collection" aria-labelledby="collection-title">
+        <div class="panel-heading"><h2 id="collection-title">Mémoires de l’UEH</h2><span class="count">3 PDF</span></div>
+        <ul id="documents"></ul>
+      </aside>
+    </div>
+  </main>
+  <footer><span>CRIA · UEH</span><span id="footnote">École normale supérieure · Département de philosophie</span></footer>
+</body>
+</html>
